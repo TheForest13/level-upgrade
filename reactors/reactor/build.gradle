@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.threforest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+//dependencyManagement {
+//    imports {
+//        mavenBom "io.projectreactor:reactor-bom:2020.0.17"
+//    }
+//}
+
+dependencies {
+    implementation group: 'io.projectreactor', name: 'reactor-bom', version: '2020.0.15', ext: 'pom'
+    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.16'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
