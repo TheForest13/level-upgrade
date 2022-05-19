@@ -4,4 +4,6 @@ include 'reactors'
 
 include 'reactor'
 project(":reactor").projectDir = file("reactors/reactor")
+include 'logging-modules:logback:MaskingSensitiveData'
+findProject(':logging-modules:logback:MaskingSensitiveData')?.name = 'MaskingSensitiveData'
 
