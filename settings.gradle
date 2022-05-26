@@ -6,4 +6,6 @@ include 'reactor'
 project(":reactor").projectDir = file("reactors/reactor")
 include 'logging-modules:logback:MaskingSensitiveData'
 findProject(':logging-modules:logback:MaskingSensitiveData')?.name = 'MaskingSensitiveData'
+include 'reactors:webflux'
+findProject(':reactors:webflux')?.name = 'webflux'
 
