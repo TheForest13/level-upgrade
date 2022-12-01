@@ -11,6 +11,9 @@ public class MyController {
     @Operation(summary = "Get message \"hello\"")
     @ApiResponse(responseCode = "200", description = "get message hello")
     @GetMapping("/hello")
+
+
+
     public String hello() {
         return "hello";
     }
