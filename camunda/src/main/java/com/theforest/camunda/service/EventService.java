@@ -40,10 +40,12 @@ public class EventService {
         EventDto eventDto = (EventDto) runtimeService.getVariable(processId, "eventDto");
         eventDto.setMessage(eventDto.getMessage() + " [WAINING event passed]");
 
-        runtimeService.createMessageCorrelation("waitingAction")
-                .processInstanceBusinessKey(processId)
-                .setVariable("eventDto", "eventDto")
+        runtimeService
+                .createMessageCorrelation("waitingAction")
+                .setVariable("eventDto", eventDto)
+                .processInstanceId(processId)
                 .correlate();
+
         return MessageFormat.format("waiting process {0} current event: {1}", processId, eventDto);
     }
 }

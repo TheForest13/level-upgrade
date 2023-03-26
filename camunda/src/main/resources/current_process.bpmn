@@ -37,16 +37,16 @@
       <bpmn:incoming>Flow_002mk3a</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_002mk3a" sourceRef="Activity_0du5dry" targetRef="Event_0x47z5m" />
-    <bpmn:intermediateCatchEvent id="waitingAction" name="waitingAction">
+    <bpmn:intermediateCatchEvent id="Event_0gb3x7r" name="waiting for action">
       <bpmn:extensionElements />
       <bpmn:incoming>Flow_1dkvhk1</bpmn:incoming>
       <bpmn:incoming>Flow_0b0awe8</bpmn:incoming>
       <bpmn:outgoing>Flow_1wlnris</bpmn:outgoing>
       <bpmn:messageEventDefinition id="MessageEventDefinition_02byxer" messageRef="Message_1aaqh7u" />
     </bpmn:intermediateCatchEvent>
-    <bpmn:sequenceFlow id="Flow_1wlnris" sourceRef="waitingAction" targetRef="Activity_0du5dry" />
-    <bpmn:sequenceFlow id="Flow_0b0awe8" sourceRef="Activity_1cda1jp" targetRef="waitingAction" />
-    <bpmn:sequenceFlow id="Flow_1dkvhk1" sourceRef="Activity_1nge1lv" targetRef="waitingAction" />
+    <bpmn:sequenceFlow id="Flow_1wlnris" sourceRef="Event_0gb3x7r" targetRef="Activity_0du5dry" />
+    <bpmn:sequenceFlow id="Flow_0b0awe8" sourceRef="Activity_1cda1jp" targetRef="Event_0gb3x7r" />
+    <bpmn:sequenceFlow id="Flow_1dkvhk1" sourceRef="Activity_1nge1lv" targetRef="Event_0gb3x7r" />
   </bpmn:process>
   <bpmn:message id="Message_1aaqh7u" name="waitingAction" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -82,10 +82,10 @@
           <dc:Bounds x="1130" y="302" width="20" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0gb3x7r_di" bpmnElement="waitingAction">
+      <bpmndi:BPMNShape id="Event_0gb3x7r_di" bpmnElement="Event_0gb3x7r">
         <dc:Bounds x="782" y="259" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="768" y="302" width="64" height="14" />
+          <dc:Bounds x="759" y="302" width="82" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_036anlq_di" bpmnElement="Flow_036anlq">
