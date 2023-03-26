@@ -14,9 +14,9 @@ import javax.validation.Valid;
 @RestController
 public class MyController {
 
-    @Operation(summary = "Get message \"hello\"")
-    @ApiResponse(responseCode = "200", description = "get message hello")
-    @PostMapping("/hello")
+    @Operation(summary = "Get message")
+    @ApiResponse(responseCode = "200", description = "get message ")
+    @PostMapping("/message")
     public MessageDto hello(@RequestBody @Valid MessageDto dto) {
         return dto;
     }

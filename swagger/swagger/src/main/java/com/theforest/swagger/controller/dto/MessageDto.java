@@ -6,8 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import javax.validation.constraints.AssertTrue;
 
-@Getter
-
+//@Getter
 @AllArgsConstructor
 public class MessageDto {
     private String field1;
