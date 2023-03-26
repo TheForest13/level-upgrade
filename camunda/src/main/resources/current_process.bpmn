@@ -31,6 +31,7 @@
     </bpmn:sequenceFlow>
     <bpmn:serviceTask id="Activity_0du5dry" name="Final event" camunda:delegateExpression="${finalEventDelegate}">
       <bpmn:incoming>Flow_1wlnris</bpmn:incoming>
+      <bpmn:incoming>Flow_1hdnhg4</bpmn:incoming>
       <bpmn:outgoing>Flow_002mk3a</bpmn:outgoing>
     </bpmn:serviceTask>
     <bpmn:endEvent id="Event_0x47z5m" name="final">
@@ -47,8 +48,14 @@
     <bpmn:sequenceFlow id="Flow_1wlnris" sourceRef="Event_0gb3x7r" targetRef="Activity_0du5dry" />
     <bpmn:sequenceFlow id="Flow_0b0awe8" sourceRef="Activity_1cda1jp" targetRef="Event_0gb3x7r" />
     <bpmn:sequenceFlow id="Flow_1dkvhk1" sourceRef="Activity_1nge1lv" targetRef="Event_0gb3x7r" />
+    <bpmn:boundaryEvent id="Event_10fkgr3" attachedToRef="Activity_1nk44lb">
+      <bpmn:outgoing>Flow_1hdnhg4</bpmn:outgoing>
+      <bpmn:errorEventDefinition id="ErrorEventDefinition_00t8o6l" errorRef="Error_0dtbeib" />
+    </bpmn:boundaryEvent>
+    <bpmn:sequenceFlow id="Flow_1hdnhg4" sourceRef="Event_10fkgr3" targetRef="Activity_0du5dry" />
   </bpmn:process>
   <bpmn:message id="Message_1aaqh7u" name="waitingAction" />
+  <bpmn:error id="Error_0dtbeib" name="extraFinalError" errorCode="extraFinalError" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="current_process">
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
@@ -87,6 +94,9 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="759" y="302" width="82" height="14" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1dzv97n_di" bpmnElement="Event_10fkgr3">
+        <dc:Bounds x="322" y="299" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_036anlq_di" bpmnElement="Flow_036anlq">
         <di:waypoint x="215" y="277" />
@@ -127,6 +137,12 @@
       <bpmndi:BPMNEdge id="Flow_1wlnris_di" bpmnElement="Flow_1wlnris">
         <di:waypoint x="818" y="277" />
         <di:waypoint x="880" y="277" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1hdnhg4_di" bpmnElement="Flow_1hdnhg4">
+        <di:waypoint x="340" y="335" />
+        <di:waypoint x="340" y="390" />
+        <di:waypoint x="930" y="390" />
+        <di:waypoint x="930" y="317" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>

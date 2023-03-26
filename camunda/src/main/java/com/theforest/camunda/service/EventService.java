@@ -4,6 +4,7 @@ import com.theforest.camunda.dto.EventDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.camunda.bpm.engine.RuntimeService;
+import org.camunda.bpm.engine.runtime.ProcessInstance;
 import org.springframework.stereotype.Service;
 
 import java.text.MessageFormat;
@@ -24,9 +25,9 @@ public class EventService {
         variables.put("eventDto", eventDto);
         String processId = UUID.randomUUID().toString();
         log.info("stage INITIAL");
-        runtimeService.startProcessInstanceByKey("current_process", processId, variables);
+        ProcessInstance currentProcess = runtimeService.startProcessInstanceByKey("current_process", processId, variables);
 
-        return MessageFormat.format("process {0} current event: {1}", processId, eventDto);
+        return MessageFormat.format("process {0} current event: {1}", currentProcess.getId(), eventDto);
     }
 
     /**
