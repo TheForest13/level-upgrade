@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+  labels:
+    env: local
+    app: myApp
+    tier: backend
+    owner: TheForest
+spec:
+  containers:
+    - name: container-app
+      image: app:0.0.1
+      ports:
+        - containerPort: 8080
