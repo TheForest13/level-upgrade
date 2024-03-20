@@ -1,0 +1,11 @@
+###
+POST http://localhost:8087/new-event
+Content-Type: application/json
+
+{
+  "message": "-",
+  "result": "false"
+}
+
+###
+POST http://localhost:8087/8cefffa1-e6b2-11ee-bbed-00933718e454/waiting-event

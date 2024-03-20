@@ -49,4 +49,5 @@ public class EventService {
 
         return MessageFormat.format("waiting process {0} current event: {1}", processId, eventDto);
     }
+
 }
