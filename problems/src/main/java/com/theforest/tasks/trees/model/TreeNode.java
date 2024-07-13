@@ -1,4 +1,4 @@
-package com.theforest.trees.model;
+package com.theforest.tasks.trees.model;
 
 import lombok.Getter;
 

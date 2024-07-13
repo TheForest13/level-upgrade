@@ -1,4 +1,4 @@
-package com.theforest.task462;
+package com.theforest.tasks.task462;
 
 import java.util.Arrays;
 

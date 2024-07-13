@@ -1,6 +1,6 @@
-package com.theforest.trees;
+package com.theforest.tasks.trees;
 
-import com.theforest.trees.model.TreeNode;
+import com.theforest.tasks.trees.model.TreeNode;
 
 public class MaxPathSumProblem {
     public static int maxPathSum(TreeNode node) {
