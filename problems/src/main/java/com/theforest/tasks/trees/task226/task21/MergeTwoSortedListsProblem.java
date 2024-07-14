@@ -1,4 +1,4 @@
-package com.theforest.tasks.trees.task21;
+package com.theforest.tasks.trees.task226.task21;
 
 import lombok.ToString;
 
