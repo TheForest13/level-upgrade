@@ -40,7 +40,7 @@ public class SumDfsAndBfs {
 
     // найти сумму дерева
     private static int sumWithQueue(TreeNode root) {
-        Queue<TreeNode> queue = new LinkedList<>(); // BFS (Поиск в ширину)
+        Queue<TreeNode> queue = new ArrayDeque<>(); // BFS (Поиск в ширину)
         queue.add(root);
 
         int sum = 0;

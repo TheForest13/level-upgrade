@@ -15,6 +15,7 @@ public class ValidPalindromeProblem {
         System.out.println("case1: " + solution.isPalindrome(case1));
         System.out.println("case2: " + solution.isPalindrome(case2));
         System.out.println("case3: " + solution.isPalindrome(case3));
+        System.out.println("case4: " + solution.isPalindrome(case4));
         System.out.println("case5: " + solution.isPalindrome(case5));
     }
 
@@ -48,11 +49,11 @@ class Solution {
 
     private String reverseString(String str) {
         char[] array = str.toCharArray();
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for (int i = array.length - 1; i >= 0; i--) {
-            result = result + array[i];
+            result.append(array[i]);
         }
-        return result;
+        return result.toString();
     }
 
 }
