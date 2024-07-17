@@ -7,22 +7,22 @@ public class ValidParenthesesProblem {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-//        System.out.println(solution.isValid("()"));     //true
-//        System.out.println(solution.isValid("()[]{}")); //true
-//        System.out.println(solution.isValid("(]"));     //false
-//        System.out.println(solution.isValid("([)]"));   //false
+        System.out.println(solution.isValid("()"));     //true
+        System.out.println(solution.isValid("()[]{}")); //true
+        System.out.println(solution.isValid("(]"));     //false
+        System.out.println(solution.isValid("([)]"));   //false
         System.out.println(solution.isValid("{[]}"));   //true
     }
 }
 
 class Solution {
 
-    public boolean isValid(String s) {
-        while (s.contains("()") || s.contains("[]") || s.contains("{}")) {
-            s = s.replace("()", "");
-            s = s.replace("[]", "");
-            s = s.replace("{}", "");
+    public boolean isValid(String input) {
+        while (input.contains("()") || input.contains("[]") || input.contains("{}")) {
+            input = input.replace("()", "");
+            input = input.replace("[]", "");
+            input = input.replace("{}", "");
         }
-        return s.isEmpty();
+        return input.isEmpty();
     }
 }
