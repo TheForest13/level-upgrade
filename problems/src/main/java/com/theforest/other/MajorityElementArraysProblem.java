@@ -25,8 +25,8 @@ public class MajorityElementArraysProblem {
         MajorityElementArraysProblemSolution solution = new MajorityElementArraysProblemSolution();
 
         int[] case1 = {3, 2, 3}; // 3
-        int[] case2 = {2,2,1,1,1,2,2}; // 2
-        int[] case3 = {1, 1, 2, 2, 3, 1, 3, 3, 4, 1, 1, }; // 1
+        int[] case2 = {2, 2, 1, 1, 1, 2, 2}; // 2
+        int[] case3 = {1, 1, 2, 2, 3, 1, 3, 3, 4, 1, 1,}; // 1
         System.out.println(solution.majorityElement(case1));
         System.out.println(solution.majorityElement(case2));
         System.out.println(solution.majorityElement(case3));

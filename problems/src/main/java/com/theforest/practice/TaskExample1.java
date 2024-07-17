@@ -34,6 +34,7 @@ public class TaskExample1 {
                                 .findFirst()
                                 .orElseThrow()));
 
+        //TODO Вариант лучше
         Map<Long, Integer> outputMapVer2 = inputMap.entrySet()
                 .stream()
                 .flatMap(entry -> {

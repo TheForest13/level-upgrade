@@ -45,9 +45,9 @@ public class ReverseWord {
 
 class ReverseWordSolution {
     public String reverseWords(String input) {
-        String inputClear = input.replaceAll("[\\W]+", "/");
-        System.out.println("inputClear: " + inputClear);
-        String[] words = inputClear.split("/");
+//        String inputClear = input.replaceAll("[\\W]+", "/");
+//        System.out.println("inputClear: " + inputClear);
+        String[] words = input.split("[\\W]+");
         StringBuilder result = new StringBuilder();
         for (int i = words.length - 1; i >= 0; i--) {
             result.append(words[i])
