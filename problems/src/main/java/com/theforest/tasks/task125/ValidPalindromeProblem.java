@@ -43,7 +43,9 @@ class Solution {
                           int length,
                           String line) {
         String subOne = line.substring(0, midFromSubOne);
-        String subTwo = reverseString(line.substring(midFromSubTwo, length));
+        String subTwo = new StringBuilder(line.substring(midFromSubTwo, length))
+                .reverse()
+                .toString();
         return subOne.equals(subTwo);
     }
 
