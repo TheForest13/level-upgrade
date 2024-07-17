@@ -22,7 +22,7 @@ import java.util.Map;
 
 public class MajorityElementArraysProblem {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        MajorityElementArraysProblemSolution solution = new MajorityElementArraysProblemSolution();
 
         int[] case1 = {3, 2, 3}; // 3
         int[] case2 = {2,2,1,1,1,2,2}; // 2
@@ -33,7 +33,7 @@ public class MajorityElementArraysProblem {
     }
 }
 
-class Solution {
+class MajorityElementArraysProblemSolution {
     public int majorityElement(int[] nums) {
         Map<Integer, Integer> numToCount = new HashMap<>();
         int maxNum = nums[0];
