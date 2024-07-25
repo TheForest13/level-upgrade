@@ -1,4 +1,4 @@
-package com.theforest.other;
+package com.theforest.tasks.task3;
 
 // Given a string s, find the length of the longest
 // substring
@@ -29,24 +29,35 @@ package com.theforest.other;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+ */
 public class LengthOfLongestSubstring {
-    public static void main(String[] args) {
-        LengthOfLongestSubstringSolution solution = new LengthOfLongestSubstringSolution();
-
-        String case1 = "abcabcbb";  // 3
-        String case2 = "bbbbb";     // 1
-        String case3 = "pwwkew";    // 3
-        System.out.println("result: " + solution.lengthOfLongestSubstring(case1));
-        System.out.println("result: " + solution.lengthOfLongestSubstring(case2));
-        System.out.println("result: " + solution.lengthOfLongestSubstring(case3));
-    }
-}
-
-class LengthOfLongestSubstringSolution {
-
     private static final int DEFAULT_COUNT = 1;
 
+
     public int lengthOfLongestSubstring(String input) {
+        int maxLength = 0;
+        Set<Character> charSet = new HashSet<>();
+        int left = 0;
+
+        for (int right = 0; right < input.length(); right++) {
+            if (!charSet.contains(input.charAt(right))) {
+                charSet.add(input.charAt(right));
+                maxLength = Math.max(maxLength, right - left + 1);
+            } else {
+                while (charSet.contains(input.charAt(right))) {
+                    charSet.remove(input.charAt(left));
+                    left++;
+                }
+                charSet.add(input.charAt(right));
+            }
+        }
+
+        return maxLength;
+    }
+
+    public int lengthOfLongestSubstringVer2(String input) {
         if (input == null || input.length() == 0) {
             return 0;
         }
@@ -68,7 +79,9 @@ class LengthOfLongestSubstringSolution {
                 uniqSymbols.add(symbol);
             }
         }
-        System.out.println("final: " + uniqSymbols);
+        if (count > maxCount) {
+            maxCount = count;
+        }
         return maxCount;
     }
 }
