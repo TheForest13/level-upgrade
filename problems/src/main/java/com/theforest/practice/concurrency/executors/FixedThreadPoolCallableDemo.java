@@ -14,13 +14,10 @@ public class FixedThreadPoolCallableDemo {
         List<Future<Integer>> futures = new ArrayList<>();
         long start = System.currentTimeMillis();
 
-        ExecutorService executorService = Executors.newFixedThreadPool(cores * 100);
-        try {
+        try(ExecutorService executorService = Executors.newFixedThreadPool(cores * 100);) {
             for (int i = 0; i < 10000; i++) {
                 futures.add(executorService.submit(new GenerateRandomIntegerCallableTask()));
             }
-        } finally {
-            executorService.shutdown();
         }
 
         futures.forEach(integerFuture -> {

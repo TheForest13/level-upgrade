@@ -9,8 +9,8 @@ public class ScheduledThreadPoolDemo {
         int cores = Runtime.getRuntime().availableProcessors();
         long start = System.currentTimeMillis();
 
-        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(cores - 1);
-        try {
+
+        try(ScheduledExecutorService executorService = Executors.newScheduledThreadPool(cores - 1);) {
 
             GenerateRandomIntegerWithIdTask task1 = new GenerateRandomIntegerWithIdTask(1);
             GenerateRandomIntegerWithIdTask task2 = new GenerateRandomIntegerWithIdTask(2);
@@ -26,7 +26,6 @@ public class ScheduledThreadPoolDemo {
             executorService.schedule(task5, 0, TimeUnit.SECONDS);
 
         } finally {
-            executorService.shutdown();
             long end = System.currentTimeMillis();
             long duration = end - start;
             System.out.println("Processed in: " + duration + " ms");
