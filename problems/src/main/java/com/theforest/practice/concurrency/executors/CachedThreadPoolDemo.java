@@ -8,7 +8,7 @@ public class CachedThreadPoolDemo {
         long start = System.currentTimeMillis();
 
 
-        try(ExecutorService executorService = Executors.newCachedThreadPool();) {
+        try(ExecutorService executorService = Executors.newCachedThreadPool()) {
             for (int i = 0; i < 100; i++) {
                 executorService.submit(new GenerateRandomIntegerTask());
             }

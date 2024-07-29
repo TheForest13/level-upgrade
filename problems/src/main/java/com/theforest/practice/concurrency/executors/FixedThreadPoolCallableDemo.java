@@ -14,7 +14,7 @@ public class FixedThreadPoolCallableDemo {
         List<Future<Integer>> futures = new ArrayList<>();
         long start = System.currentTimeMillis();
 
-        try(ExecutorService executorService = Executors.newFixedThreadPool(cores * 100);) {
+        try(ExecutorService executorService = Executors.newFixedThreadPool(cores * 100)) {
             for (int i = 0; i < 10000; i++) {
                 futures.add(executorService.submit(new GenerateRandomIntegerCallableTask()));
             }

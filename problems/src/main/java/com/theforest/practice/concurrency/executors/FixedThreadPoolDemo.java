@@ -9,7 +9,7 @@ public class FixedThreadPoolDemo {
         long start = System.currentTimeMillis();
 
 
-        try(ExecutorService executorService = Executors.newFixedThreadPool(100);) {
+        try(ExecutorService executorService = Executors.newFixedThreadPool(100)) {
             for (int i = 0; i < 100; i++) {
                 executorService.submit(new GenerateRandomIntegerTask());
             }

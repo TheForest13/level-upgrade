@@ -8,7 +8,7 @@ public class SingleThreadPoolDemo {
         long start = System.currentTimeMillis();
 
 
-        try(ExecutorService executorService = Executors.newSingleThreadExecutor();) {
+        try(ExecutorService executorService = Executors.newSingleThreadExecutor()) {
             for (int i = 0; i < 100; i++) {
                 executorService.submit(new GenerateRandomIntegerTask());
             }

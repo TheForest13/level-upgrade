@@ -10,7 +10,7 @@ public class ScheduledThreadPoolDemo {
         long start = System.currentTimeMillis();
 
 
-        try(ScheduledExecutorService executorService = Executors.newScheduledThreadPool(cores - 1);) {
+        try(ScheduledExecutorService executorService = Executors.newScheduledThreadPool(cores - 1)) {
 
             GenerateRandomIntegerWithIdTask task1 = new GenerateRandomIntegerWithIdTask(1);
             GenerateRandomIntegerWithIdTask task2 = new GenerateRandomIntegerWithIdTask(2);
