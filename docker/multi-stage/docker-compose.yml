@@ -1,0 +1,30 @@
+version: '3'
+services:
+  backend:
+    build: .
+    environment:
+      - PORT=8080
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: '256m'
+        reservations:
+          cpus: '0.15'
+          memory: '128m'
+    networks:
+      - loadbalancing
+
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - "7777:80"
+    networks:
+      - loadbalancing
+    depends_on:
+      - backend
+
+networks:
+  loadbalancing:
