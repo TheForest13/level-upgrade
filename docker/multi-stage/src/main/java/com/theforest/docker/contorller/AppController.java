@@ -16,17 +16,17 @@ public class AppController {
     @GetMapping("/health")
     public ResponseEntity<String> sendHealthCheck() throws IOException {
         log.info("sendHealthCheck() - ok");
-        ClassLoader classLoader = getClass().getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream("export.json");
-        String data = readFromInputStream(inputStream);
-        for (int i = 0; i < 7; i++) {
-            for (String line : data.split("\n")) {
-                log.info(line);
-                for (CharSequence charSequence : line.split("")) {
-                    log.info(charSequence.toString());
-                }
-            }
-        }
+//        ClassLoader classLoader = getClass().getClassLoader();
+//        InputStream inputStream = classLoader.getResourceAsStream("export.json");
+//        String data = readFromInputStream(inputStream);
+//        for (int i = 0; i < 7; i++) {
+//            for (String line : data.split("\n")) {
+//                log.info(line);
+//                for (CharSequence charSequence : line.split("")) {
+//                    log.info(charSequence.toString());
+//                }
+//            }
+//        }
         return ResponseEntity.ok("alive!");
     }
 

@@ -1,4 +1,4 @@
-package com.theforest.micrometer;
+package com.theforest.micrometer.config;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;

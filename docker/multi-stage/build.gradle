@@ -19,6 +19,7 @@ repositories {
 }
 
 dependencies {
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.8.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

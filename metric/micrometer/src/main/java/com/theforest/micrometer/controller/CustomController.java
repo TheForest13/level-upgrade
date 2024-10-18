@@ -1,4 +1,4 @@
-package com.theforest.micrometer;
+package com.theforest.micrometer.controller;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.stats.CacheStats;
@@ -16,8 +16,6 @@ import java.util.Set;
 @Slf4j
 @RestController
 public class CustomController {
-
-
     private CacheManager cacheManager;
 
     public CustomController(CacheManager cacheManager) {

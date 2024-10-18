@@ -1,0 +1,21 @@
+# Use postgres/example user/password credentials
+version: '3.9'
+
+services:
+
+  app:
+    image: quartz-app:latest
+    build:
+      context: .
+    deploy:
+      replicas: 2
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"

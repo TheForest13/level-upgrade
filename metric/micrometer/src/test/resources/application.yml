@@ -16,13 +16,16 @@ spring:
 management:
   endpoints.web.exposure.include: 'prometheus, health'
   metrics:
-    export:
-      prometheus:
-        enabled: true
     distribution:
       percentiles-histogram:
         "[http.server.requests]": true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
 
 tarkov:
   url: https://tarkovpal.com
-
+logging:
+  level:
+    root: debug

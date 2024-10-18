@@ -1,0 +1,18 @@
+using:
+  spring:
+    schedulerFactory: true
+
+spring:
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: pass
+    jdbc-url: jdbc:postgresql://localhost:5432/postgres
+  flyway:
+    user: postgres
+    password: pass
+    url: jdbc:postgresql://localhost:5432/postgres
