@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.wrike.sprinter.settings.SharedSprinterSettingsState">
+    <option name="modulesWithHAPlugins">
+      <set>
+        <option value="MockMvc" />
+      </set>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-security-keycloak
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+#          issuer-uri: http://localhost:7777/realms/main-kk
+          jwk-set-uri: http://localhost:7777/realms/main-kk/protocol/openid-connect/certs
+
+logging:
+  level:
+    org:
+      zalando:
+        logbook: TRACE
+      springframework:
+        security:
+          oauth2: DEBUG
+        web: DEBUG

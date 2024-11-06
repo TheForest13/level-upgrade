@@ -1,0 +1,25 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: '0.2'
+          memory: '256m'
+        reservations:
+          cpus: '0.15'
+          memory: '128m'
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    ports:
+      - "7777:8080"
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+    command:
+      - start-dev

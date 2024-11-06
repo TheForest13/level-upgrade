@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bb460f46-f80c-4ead-a886-f78ed7b974e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/java/com/theforest/springsecuritykeycloak/SpringSecurityKeycloakApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/java/com/theforest/springsecuritykeycloak/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/java/com/theforest/springsecuritykeycloak/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/resources/public/authenticated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/resources/public/manager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/resources/requests/getToken.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/main/resources/requests/requests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../security/spring-security-keycloak/src/test/java/com/theforest/springsecuritykeycloak/SpringSecurityKeycloakApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sprinter/SharedSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MockMvc/src/main/java/com/theforest/mockmvc/service/MockMvcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MockMvc/src/test/java/com/theforest/mockmvc/service/MockMvcServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/multi-stage/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/multi-stage/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MockMvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MockMvc/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/mockmvc">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MockMvc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "TheForest13"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/TheForest13/level-upgrade.git",
+    "accountId": "9a9018b1-6a28-43b5-a6ca-bf4cace20556"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2nxsYVO1TnnQNWdDWcS49vJ7jp0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build mockmvc.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SharedJvmForTests.MockMvc.test.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="SharedJvmForTests.MockMvc.test">
+    <configuration name="MockMvc.test" type="SharedJvmForTests" temporary="true">
+      <module name="MockMvc.test" />
+      <option TEST_FRAMEWORK_ID="testFrameworkId" value="JUnit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MockMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MockMvc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.theforest.mockmvc.MockMvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="SharedJvmForTests.MockMvc.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb460f46-f80c-4ead-a886-f78ed7b974e1" name="Changes" comment="" />
+      <created>1729926108782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729926108782</updated>
+      <workItem from="1729926109867" duration="102000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
